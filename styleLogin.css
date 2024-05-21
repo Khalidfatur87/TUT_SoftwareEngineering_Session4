@@ -1,0 +1,101 @@
+:root {
+    --color-white: white;
+    --color-gray: #F5F5F5;
+    --color-blue: #0077ff;
+    --color-dark-gray: #333333;
+    --color-black: black;
+
+}
+
+@font-face {
+    font-family: Nunito Sans-Regular;
+    src: url("font/NunitoSans-Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans-Regular';
+    font-size: 14px;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    /* position: relative; */
+    /* left: 0px;
+    top: 0px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0077ff;
+}
+
+.login_frame {
+    width: 30%;
+    height: 60%;
+
+    background-color: var(--color-white);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 60px);
+
+    border: 20px var(--color-black);
+
+    padding: 20px;
+    /* margin: 20px 10px 20px 20px; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--color-dark-gray);
+
+    /* align-items: center; */
+}
+
+.logo {
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.login_title {
+    grid-row: 2;
+    grid-column: 1;
+}
+.login_big_title {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.email {
+    grid-row: 3;
+    grid-column: 1;
+}
+.password {
+    grid-row: 4;
+    grid-column: 1;
+}
+.login_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-gray-4);
+    border-radius: 10px;
+
+    padding: 0px 5px;
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+    width: 90%;
+    height: 40px;
+}
